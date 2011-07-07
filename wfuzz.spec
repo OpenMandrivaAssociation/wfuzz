@@ -1,9 +1,9 @@
 Name:		wfuzz
 Version:	1.4c
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	The web bruteforcer
 License:	GPL
-Group:		Networking/Other
+Group:		Monitoring
 URL:		http://www.edge-security.com/wfuzz.php
 Source:     http://www.edge-security.com/soft/wfuzz-%{version}.tar.bz2
 Patch0:     wfuzz-1.4-fhs.patch
