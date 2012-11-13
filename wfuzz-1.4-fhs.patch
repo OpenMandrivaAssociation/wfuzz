@@ -1,0 +1,17 @@
+diff -Naur -x '*~' wfuzz/wfuzz.py wfuzz-fhs/wfuzz.py
+--- wfuzz/wfuzz.py	2010-05-15 00:22:19.000000000 +0200
++++ wfuzz-fhs/wfuzz.py	2011-06-01 17:12:44.116500079 +0200
+@@ -2,10 +2,12 @@
+ 
+ #Covered by GPL V2.0
+ 
++import sys
++sys.path.append('/usr/share/wfuzz/lib')
++
+ import copy
+ from reqresp import *
+ import binascii
+-import sys
+ import threading
+ import getopt
+ import time
