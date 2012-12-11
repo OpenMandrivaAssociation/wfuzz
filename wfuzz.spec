@@ -1,9 +1,9 @@
 Name:		wfuzz
 Version:	1.4c
-Release:	%mkrel 2
+Release:	%mkrel 1
 Summary:	The web bruteforcer
 License:	GPL
-Group:		Monitoring
+Group:		Networking/Other
 URL:		http://www.edge-security.com/wfuzz.php
 Source:     http://www.edge-security.com/soft/wfuzz-%{version}.tar.bz2
 Patch0:     wfuzz-1.4-fhs.patch
@@ -43,4 +43,11 @@ rm -rf %{buildroot}
 %doc COPYING LICENSES README
 %{_bindir}/wfuzz.py
 %{_datadir}/wfuzz
+
+
+
+%changelog
+* Wed Jun 01 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.4c-1mdv2011.0
++ Revision: 682371
+- import wfuzz
 
