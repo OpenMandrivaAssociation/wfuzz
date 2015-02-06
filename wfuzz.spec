@@ -1,6 +1,6 @@
 Name:		wfuzz
 Version:	1.4c
-Release:	%mkrel 1
+Release:	2
 Summary:	The web bruteforcer
 License:	GPL
 Group:		Networking/Other
