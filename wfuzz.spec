@@ -1,11 +1,12 @@
 Name:		wfuzz
-Version:	1.4c
-Release:	2
+Version:	3.1.0
+Release:	1
 Summary:	The web bruteforcer
 License:	GPL
 Group:		Networking/Other
 URL:		http://www.edge-security.com/wfuzz.php
-Source:     http://www.edge-security.com/soft/wfuzz-%{version}.tar.bz2
+Source0:    https://github.com/xmendez/wfuzz/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
+#Source:     http://www.edge-security.com/soft/wfuzz-%{version}.tar.bz2
 Patch0:     wfuzz-1.4-fhs.patch
 Requires:   python-curl
 BuildArch:	noarch
