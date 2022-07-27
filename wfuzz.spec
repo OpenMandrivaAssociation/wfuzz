@@ -21,10 +21,10 @@ LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc.
 %prep
 %setup -q -n %{name}-%{version}
 #patch0 -p 1
-chmod 644 COPYING LICENSES README
+#chmod 644 COPYING LICENSES README
 
 %build
-
+%make
 %install
 rm -rf %{buildroot}
 
