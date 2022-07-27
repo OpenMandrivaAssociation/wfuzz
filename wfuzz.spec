@@ -24,17 +24,17 @@ LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc.
 #chmod 644 COPYING LICENSES README
 
 %build
-%make
+%py_build
 %install
-rm -rf %{buildroot}
+%py_install
 
-install -d -m 755 %{buildroot}%{_bindir}
-install -d -m 755 %{buildroot}%{_datadir}/wfuzz/lib
+#install -d -m 755 %{buildroot}%{_bindir}
+#install -d -m 755 %{buildroot}%{_datadir}/wfuzz/lib
 
-install -m 755 wfuzz.py %{buildroot}%{_bindir}
-install -m 644 *.py %{buildroot}%{_datadir}/wfuzz/lib
-rm -f %{buildroot}%{_datadir}/wfuzz/lib/wfuzz.py
-cp -pr wordlist %{buildroot}%{_datadir}/wfuzz
+#install -m 755 wfuzz.py %{buildroot}%{_bindir}
+#install -m 644 *.py %{buildroot}%{_datadir}/wfuzz/lib
+#rm -f %{buildroot}%{_datadir}/wfuzz/lib/wfuzz.py
+#cp -pr wordlist %{buildroot}%{_datadir}/wfuzz
 
 %clean
 rm -rf %{buildroot}
