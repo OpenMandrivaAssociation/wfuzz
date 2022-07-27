@@ -7,7 +7,8 @@ Group:		Networking/Other
 URL:		http://www.edge-security.com/wfuzz.php
 Source0:    https://github.com/xmendez/wfuzz/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
 #Source:     http://www.edge-security.com/soft/wfuzz-%{version}.tar.bz2
-#Patch0:     wfuzz-1.4-fhs.patch
+BuildRequires:  python3dist(setuptools)
+
 Requires:   python-curl
 BuildArch:	noarch
 
