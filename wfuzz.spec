@@ -41,10 +41,9 @@ LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc.
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
-%doc COPYING LICENSES README
-%{_bindir}/wfuzz.py
-%{_datadir}/wfuzz
+#doc COPYING LICENSES README
+#{_bindir}/wfuzz.py
+#{_datadir}/wfuzz
 
 
 
