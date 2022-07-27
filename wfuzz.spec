@@ -7,10 +7,10 @@ Group:		Networking/Other
 URL:		http://www.edge-security.com/wfuzz.php
 Source0:    https://github.com/xmendez/wfuzz/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
 #Source:     http://www.edge-security.com/soft/wfuzz-%{version}.tar.bz2
-Patch0:     wfuzz-1.4-fhs.patch
+#Patch0:     wfuzz-1.4-fhs.patch
 Requires:   python-curl
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+
 
 %description
 Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for
@@ -20,7 +20,7 @@ LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0 -p 1
+#patch0 -p 1
 chmod 644 COPYING LICENSES README
 
 %build
