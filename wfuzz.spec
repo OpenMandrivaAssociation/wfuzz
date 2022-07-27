@@ -19,7 +19,7 @@ GET and POST parameters for checking different kind of injections (SQL, XSS,
 LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc.
 
 %prep
-%setup -q -n %{name}
+%setup -q -n %{name}-%{version}
 %patch0 -p 1
 chmod 644 COPYING LICENSES README
 
