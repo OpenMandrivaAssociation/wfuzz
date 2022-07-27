@@ -36,7 +36,7 @@ rm -rf %{buildroot}
 %{_bindir}/wfpayload
 %{_bindir}/wfuzz
 %{_bindir}/wxfuzz
-#{python_sitelib}/wfuzz-%{version}-py*.*.egg-info
+%{python_sitelib}/wfuzz-%{version}-py%{pyver}.egg-info
 %{python_sitelib}/wfuzz/
 
 %changelog
