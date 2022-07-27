@@ -28,6 +28,8 @@ LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc.
 %py_build
 %install
 %py_install
+%clean
+rm -rf %{buildroot}
 
 %files
 %{_bindir}/wfencode
