@@ -29,23 +29,13 @@ LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc.
 %install
 %py_install
 
-#install -d -m 755 %{buildroot}%{_bindir}
-#install -d -m 755 %{buildroot}%{_datadir}/wfuzz/lib
-
-#install -m 755 wfuzz.py %{buildroot}%{_bindir}
-#install -m 644 *.py %{buildroot}%{_datadir}/wfuzz/lib
-#rm -f %{buildroot}%{_datadir}/wfuzz/lib/wfuzz.py
-#cp -pr wordlist %{buildroot}%{_datadir}/wfuzz
-
-%clean
-rm -rf %{buildroot}
-
 %files
-#doc COPYING LICENSES README
-#{_bindir}/wfuzz.py
-#{_datadir}/wfuzz
-
-
+%{_bindir}/wfencode
+%{_bindir}/wfpayload
+%{_bindir}/wfuzz
+%{_bindir}/wxfuzz
+%{python_sitelib}/wfuzz-%{version}-py*.*.egg-info
+%{python_sitelib}/wfuzz/
 
 %changelog
 * Wed Jun 01 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.4c-1mdv2011.0
