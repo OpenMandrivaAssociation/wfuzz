@@ -36,8 +36,9 @@ rm -rf %{buildroot}
 %{_bindir}/wfpayload
 %{_bindir}/wfuzz
 %{_bindir}/wxfuzz
-%{python_sitelib}/wfuzz-%{version}-py%{pyver}.egg-info
-%{python_sitelib}/wfuzz/
+#{python_sitelib}/wfuzz-%{version}-py%{pyver}.egg-info
+#{python_sitelib}/wfuzz/
+%{python_sitelib}/
 
 %changelog
 * Wed Jun 01 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.4c-1mdv2011.0
