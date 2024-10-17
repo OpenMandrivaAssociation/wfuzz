@@ -4,7 +4,7 @@ Release:	1
 Summary:	The web bruteforcer
 License:	GPL
 Group:		Networking/Other
-URL:		http://www.edge-security.com/wfuzz.php
+URL:		https://www.edge-security.com/wfuzz.php
 Source0:    https://github.com/xmendez/wfuzz/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
 #Source:     http://www.edge-security.com/soft/wfuzz-%{version}.tar.bz2
 BuildRequires:  python3dist(setuptools)
